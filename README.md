@@ -1,6 +1,6 @@
 # TayaAPI
 
-**TayaAPI** is a RESTful backend API built with **.NET and Entity Framework Core** to manage and track bank transactions efficiently.  
+**TayaAPI** is a RESTful backend API built with **.NET and Entity Framework Core** to manage and track bank transactions efficiently. Tested with Postman and Swagger.
 
 ---
 
@@ -45,7 +45,9 @@ GET /api/Movements/summary?startDate=2025-12-26&endDate=2025-12-29
 ```
 ---
 
-**TayaAPI** es una API RESTful desarrollada con **.NET y Entity Framework Core** para gestionar y hacer seguimiento de transacciones bancarias de manera eficiente.
+**TayaAPI** es una API RESTful desarrollada con **.NET y Entity Framework Core** para gestionar y hacer seguimiento de transacciones bancarias de manera eficiente. Probado con Postman y Swagger.
+
+
 
 ## Requisitos Funcionales
 
