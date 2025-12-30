@@ -46,7 +46,7 @@ GET /api/Movements/summary?startDate=2025-12-26&endDate=2025-12-29
 ## Getting Started
 
 ### Prerequisites
-- .NET SDK 8+
+- .NET SDK 10+
 - SQL Server
 - Entity Framework Core CLI
 
@@ -142,7 +142,7 @@ GET /api/Movements/summary?startDate=2025-12-26&endDate=2025-12-29
 ## Primeros pasos
 
 ### Requisitos previos
-- .NET SDK 8 o superior
+- .NET SDK 10 o superior
 - SQL Server
 - Entity Framework Core CLI
 
