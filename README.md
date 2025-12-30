@@ -1,6 +1,6 @@
 # TayaAPI
 
-**TayaAPI** is a RESTful backend API built with **.NET and Entity Framework Core** to manage and track bank transactions efficiently. Tested with Postman and Swagger.
+**TayaAPI** is a RESTful backend API built with **.NET 10 and Entity Framework Core** to manage and track bank transactions efficiently. Tested with Postman and Swagger.
 
 ---
 
@@ -43,6 +43,45 @@
 ```http
 GET /api/Movements/summary?startDate=2025-12-26&endDate=2025-12-29
 ```
+## Getting Started
+
+### Prerequisites
+- .NET SDK 8+
+- SQL Server
+- Entity Framework Core CLI
+
+### Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/tnhdd/TayaAPI.git
+```
+2. Configure the database connection
+You might need to update appsettings.json file
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Server=localhost;Database=MovementDB;Trusted_Connection=True;TrustServerCertificate=True;"
+}
+```
+3. Create the database
+You must run
+```bash
+dotnet ef database update
+```
+This will:
+- Create the database
+- Create all tables
+- Apply relationships and constraints
+4.Run the API
+```bash
+dotnet run
+```
+Then open Swagger:
+```http
+http://localhost:5027/index.html
+```
+
+
 ---
 
 **TayaAPI** es una API RESTful desarrollada con **.NET y Entity Framework Core** para gestionar y hacer seguimiento de transacciones bancarias de manera eficiente. Probado con Postman y Swagger.
@@ -99,3 +138,43 @@ GET /api/Movements/summary?startDate=2025-12-26&endDate=2025-12-29
 
 ```http
 GET /api/Movements/summary?startDate=2025-12-26&endDate=2025-12-29
+```
+## Primeros pasos
+
+### Requisitos previos
+- .NET SDK 8 o superior
+- SQL Server
+- Entity Framework Core CLI
+
+### Configuración
+
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/tnhdd/TayaAPI.git
+```
+2. Configurar la conexión a la base de datos. Es posible que necesites actualizar el archivo appsettings.json:
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Server=localhost;Database=MovementDB;Trusted_Connection=True;TrustServerCertificate=True;"
+}
+```
+3. Crear la base de datos. Debes ejecutar:
+```bash
+dotnet ef database update
+```
+Esto realizará lo siguiente:
+- Creará la base de datos
+- Creará todas las tablas
+- Aplicará las relaciones y restricciones
+4.Run the API
+```bash
+dotnet run
+```
+4.Ejecutar la API
+```bash
+dotnet run
+```
+Luego abre Swagger en el navegador:
+```http
+http://localhost:5027/index.html
+```
